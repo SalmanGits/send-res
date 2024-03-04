@@ -1,6 +1,6 @@
 {
   "name": "res-express",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "send response",
-    "send response in express"
+    "send response in express",
+    "express Response sender"
   ],
   "author": "Belal",
   "license": "MIT",

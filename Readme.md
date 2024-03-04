@@ -1,4 +1,4 @@
-# Express Response Sender
+## Express Response Sender
 
 > A simple utility function to send responses in Express.
 
@@ -32,7 +32,7 @@ app.listen(3000, () => console.log("Server is running on port 3000"));
 ```
 ## Authors
 
-* **Belal Ahmad** - *Initial work* - [BelalAhmad](https://github.com/SalmanGits)
+* **Belal Ahmad** - [BelalAhmad](https://github.com/SalmanGits)
 
 
 
