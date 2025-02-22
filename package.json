@@ -1,6 +1,6 @@
 {
   "name": "res-express",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight utility package for sending consistent and standardized HTTP responses in Express applications.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
