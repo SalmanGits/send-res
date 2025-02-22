@@ -8,22 +8,13 @@
 
 import { Response } from 'express';
 
-type SendResponseParams = {
-    res: Response;
-    status: number;
-    data?: Record<string, any>;
-};
-
-function sendResponse({ res, status, data }: SendResponseParams): void {
+export function sendResponse<T>(res: Response, status: number, data?: T): void {
     if (!res || !status) {
         throw new Error("Response object and status are required");
     }
-    if (data !== undefined && (typeof data !== 'object' || Array.isArray(data) || data === null)) {
-        throw new TypeError("Data must be an object");
-    }
 
     try {
-        if (data) {
+        if (data !== undefined) {
             res.status(status).json(data);
         } else {
             res.sendStatus(status);
@@ -33,4 +24,3 @@ function sendResponse({ res, status, data }: SendResponseParams): void {
     }
 }
 
-export { sendResponse };

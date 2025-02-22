@@ -1,14 +1,17 @@
 {
   "name": "res-express",
-  "version": "1.0.2",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.3",
+  "description": "A lightweight utility package for sending consistent and standardized HTTP responses in Express applications.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SalmanGits/send-res.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "prepare": "npm run build"
   },
   "keywords": [
     "send response",
@@ -18,7 +21,11 @@
   "author": "Belal",
   "license": "MIT",
   "dependencies": {
-    "@types/express": "^5.0.0",
     "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "typescript": "^5.7.3"
   }
 }
